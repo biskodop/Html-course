@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+    <script src="js/oblicz_rate.js" type="text/javascript"></script>
+    <title>Szybki kurs HTML</title>
+</head>
+<body>
+        <header>
+            <h1>Szybki kurs HTML</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Podstawy</a></li>
+                    <li><a href="table.html">Tabele</a></li>
+                    <li><a href="">Formularze</a>
+                        <ul>
+                            <li><a href="form.html" >Pola formularza</a></li>
+                            <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
+                        </ul>
+                    </li>
+                <li><a href="galery.html" title="">Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="wrapper">
+        <main>
+            <section>
+                <h2>Pożyczka</h2>
+                <table>
+                    <tr>
+                        <td>Kwota:</td>
+                        <td><input type="number" name="kwota" id ="kwota"></td>
+                    </tr>
+                    <tr>
+                        <td>Ile rat:</td>
+                        <td><input type="number" name="rat" id ="rat"></td>
+                    </tr>
+                    <tr>
+                        <td>Procent:</td>
+                        <td><input type="number" name="procent" id ="procent"></td>
+                    </tr>
+                    <tr>
+                        <td>Rata miesięczna:</td>
+                        <td><input type="number" name="rata_m" id ="rata_m" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Kwota z odsetkami:</td>
+                        <td><input type="number" name="kwota_o" id ="kwota_o" disabled></td>
+                    </tr>
+                </table>
+                <button onclick="oblicz()">Oblicz ratą stalą: </button>
+            </section>
+        </main>
+        <aside>
+            <section>
+                <h3>Walidatory:</h3>
+                <ul>
+                 <li> <a href="http://validator.w3.org/">HTML </a></li>
+                 <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Kursy:</h3>
+                <ul>
+                    <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                    <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                    <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                    <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+        <footer>&copy;BP </footer>
+</body>
+</html>

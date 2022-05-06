@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamowienie pizzy</title>
+</head>
+<body>
+    <div id="kontener">
+        <div id="menu">
+            <a href="index.html">Podstawowe znaczniki</a>
+            <a href="table.html">Tworzenie tabel</a>
+            <a href="form.html">Budowa formularzy</a>
+            <a href="zamowienie.html">Zamowienie pizzy</a>
+        </div>
+
+        <div id="tresc">
+            <div id="baner"><h1>Kreator pizzy</h1></div>
+            <form action="s97080@pollub.edu.pl" method="POST">
+                <fieldset>
+                    <legend>Rozmiar:</legend>
+                    <input type="radio" name="rozm" value="small" />Mała 
+                    <input type="radio" name="rozm" value="avr" />Średnia 
+                    <input type="radio" name="rozm" value="big" />Duża
+                </fieldset>
+                <fieldset>
+                    <legend>Dodatki:</legend>
+                    <input type="checkbox" name="PHP" value="PHP" /> Szynka <br />
+                    <input type="checkbox" name="C/C++" value="C/C++" /> Salami <br />
+                    <input type="checkbox" name="Java" value="Java" /> Boczek <br />
+                    <input type="checkbox" name="PHP" value="PHP" /> Papryka <br />
+                    <input type="checkbox" name="C/C++" value="C/C++" /> Pomidor <br />
+                    <input type="checkbox" name="Java" value="Java" /> Ser <br />
+                </fieldset>
+                <fieldset>
+                    <legend>Sosy:</legend>
+                    Wybierz sosy:
+                    <select size = "3" name="hobby" multiple="multiple">
+                        <option value="p">Pomidorowy</option>
+                        <option value="second">Czosnokowy</option>
+                        <option value="third">Ketchup łagodny</option>
+                        <option value="third">Ketchup pikantny</option>
+                    </select><br>
+                    Inne uwagi: 
+                    <textarea cols="50" rows="5" name="opinia">
+                    </textarea>
+                            
+                </fieldset>
+                <input type="reset" value="Wycziść dane" />
+                <input type="submit" value="Wiślij zamówienie" />
+            </form>
+        
+        </div>
+    </div>
+</body>
+</html>
