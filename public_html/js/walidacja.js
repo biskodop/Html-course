@@ -64,5 +64,10 @@ function sprawdz()
         document.getElementById("zaplata_error").innerHTML= "Nic nie zaznaczono!";
     }
     else document.getElementById("zaplata_error").innerHTML="";
+    if(ok){
+       var dane="Następujące dane zostaną wysłane:\n";
+       dane+="Nazwisko: "+document.getElementById('Nazw').value+"\n";
+       dane+="Email: "+document.getElementById('email').value+"\n"; 
+    }
     return ok;
 }
